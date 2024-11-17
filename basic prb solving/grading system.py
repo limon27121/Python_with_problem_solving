@@ -1,26 +1,22 @@
+Number=float(input("enter your number: "))
 
+if(Number>=80 and Number<=100):
+    result='A+'
+elif(Number>=70 and Number<=79):
+    result='A'
+elif(Number>=60 and Number<=69):
+    result='A-'
+elif(Number>=50 and Number<=59):
+    result='B'
+elif(Number>=40 and Number<=49):
+    result='C'
+elif(Number>=33 and Number<=39):
+    result='D'
+elif(Number>=0 and Number<=32):
+    result='F'
 
-number=float(input("enter your marks: "))
-
-if(number>=80 and number<=100):
-     print("A+")
-  
-elif(number>=70 and number<=79):
-    print("A")
-    
-elif(number>=60 and number<=69):
-    print("A-")
-elif(number>=50 and number<=59):
-    print("B")
-
-elif(number>=40 and number<=49):
-    print("c")
-
-elif(number>=33 and number<=39):
-    print("D")
-
-elif(number<=32):
-    print("F")
-    
 else:
-    print("invalid number")
+    result="invalid number"
+
+print("Your Grade is:",result)
+

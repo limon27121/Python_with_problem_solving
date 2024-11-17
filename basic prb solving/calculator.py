@@ -1,22 +1,24 @@
-num1 = float(input("Enter your number: "))
-num2 = float(input("Enter your number: "))
-print("enter any of sign which you want \n sum(+) \n subtraction(-)\n multiplication(*) \ndivision(/)\n power(**)\n modulus(%) ")
-char=input("enter your sign: ")
+number1=float(input("enter your first number:"))
+number2=float(input("enter your second number:"))
+print("enter your desire sign \n sum(+)\n subtract(-)\n multiplication(*)\n division(/)\n reminder(%)\n exponent(**)")
 
-if(char=="+"):
-    result=num1+num2
+sign=input("enter your desired sign:")
 
-elif(char=="-"):
-      result=num1-num2
-elif(char=="*"):
-    result=num1*num2 
-elif(char=="/"):
-     result=num1/num2
-elif(char=="**"):
-     result=num1**num2  
-elif(char=="%"):
-     result=num1%num2 
+
+if(sign=="+"):
+    result=number1+number2
+elif(sign=="-"):
+    result=number1-number2
+elif(sign=="*"):
+    result=number1*number2
+elif(sign=="/"):
+    result=number1/number2
+elif(sign=="%"):
+    result=number1%number2
+elif(sign=="**"):
+    result=number1**number2
+
 else:
-    print("invalid output");
-     
-print("{}{}{}={}".format(num1,char,num2,result))
+   result="invalid sign"
+
+print("My result is:",result)
